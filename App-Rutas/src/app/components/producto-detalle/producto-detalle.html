@@ -1,0 +1,35 @@
+
+<div class="detalle-container">
+  <h2>Detalle del Producto</h2>
+
+  @if (producto) {
+    <div class="producto-info">
+      <h3>{{ producto.nombre }}</h3>
+      <p><strong>ID:</strong> {{ producto.id }}</p>
+      <p><strong>Precio:</strong> ${{ producto.precio }}</p>
+      <p><strong>Descripción:</strong> {{ producto.descripcion }}</p>
+      <p><strong>Stock:</strong> {{ producto.stock }} unidades</p>
+    </div>
+  }
+
+  @if (!producto) {
+    <div class="no-encontrado">
+      <h3>Producto no encontrado</h3>
+      <p>El producto con ID "{{ productID }}" no existe.</p>
+    </div>
+  }
+
+  @if (!producto) {
+    <div class="no-encontrado">
+      <h3>Producto no encontrado</h3>
+      <p>El producto con ID "{{ productID }}" no existe.</p>
+    </div>
+  }
+
+  <div class="acciones">
+    <button (click)="volver()" class="btn-volver">
+      ← Volver a Productos
+    </button>
+
+  </div>
+</div>

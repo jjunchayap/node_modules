@@ -1,0 +1,19 @@
+
+<div class="productos-container">
+  <h2>Lista Productos</h2>
+
+  <div class="productos-grid">
+
+    @for (producto of productos; track producto) {
+      <div class="producto-card">
+        <h3>{{ producto.nombre }}</h3>
+        <p>Precio: {{ producto.precio }}</p>
+        <a [routerLink]="['/producto',producto.id]" class="ver-detalle-btn">
+          Ver detalle
+        </a>
+      </div>
+    }
+
+  </div>
+
+</div>
