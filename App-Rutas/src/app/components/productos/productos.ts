@@ -16,5 +16,4 @@ export class Productos {
     { id: 4, nombre: 'Producto 4', precio: 400 },
     { id: 5, nombre: 'Producto 5', precio: 500 }
   ]
-
-}
+  }
